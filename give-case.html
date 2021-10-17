@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/c2566c0a23.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="style/css/normalize.css">
+  <link rel="stylesheet" href="style/css/style.css">
+  <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/png"> -->
+
+  <title>التبرع لحالة</title>
+</head>
+
+<body>
+  <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-nav">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">كورونا - <span>19</span></a> -->
+
+      <!-- الزر في الشاشات الصغيرة -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="mb-2 navbar-nav mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link title active" aria-current="page" href="index.html">الرئيسة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link title" href="cases.html">الحالات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link title" href="about.html">من نحن</a>
+          </li>
+        </ul>
+        <a href="login.html" class="login title">تسجيل</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="show-case" class="container-fluid">
+    <div class="row min-vh-100 flex-column flex-md-row-reverse">
+      <aside class="p-0 col-12 col-md-6 col-xl-4 flex-shrink-1">
+        <div class="shadow image">
+          <img src="img/p2.jpg" alt="" srcset="">
+        </div>
+
+        <h4 class="mt-3 text-center fw-semibold">علي حيدر رزيك العامري</h4>
+
+        <div class="status">
+          <h5 class="mt-3 text-center">الحالة</h5>
+          <div class="px-3 py-2">
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 case-info d-flex flex-column">
+          <div class="test22 d-flex ">
+            <i class="far fa-calendar fa-lg"></i>
+            <h5 class="px-2 m-0">العمر :</h5>
+            <h5 class="m-0">55</h5>
+          </div>
+
+          <div class="mt-2 test22 d-flex">
+            <i class="fas fa-phone fa-lg"></i>
+            <h5 class="px-2 m-0">هاتف :</h5>
+            <h5 class="m-0" style="direction: ltr;">+964780000000</h5>
+          </div>
+
+          <div class="mt-2 test22 d-flex">
+            <i class="fas fa-at fa-lg"></i>
+            <h5 class="px-2 m-0">البريد :</h5>
+            <h5 class="m-0" style="direction: ltr;">ali.hayder.rzayyig@gmail.com</h5>
+          </div>
+
+          <a href="show-case.html" class="mt-5 btn btn-outline-primary d-block">التفاصيل</a>
+        </div>
+
+
+      </aside>
+
+      <section class="px-3 py-4 d-block col-12 col-md-6 col-xl-8">
+        <div class="container bg-white shadow give">
+          <div class="header-give">
+            <button class="btn btn-secondary d-block w-100 active" onclick="activeBlode('tsb')">التبرع بالدم</button>
+            <button class="btn btn-secondary d-block w-100" onclick="activeBlode('tsm')">التبرع بالمال</button>
+          </div>
+
+          <div id="tsb" class="form-give active2">
+            <div class="card-body">
+              <h3 class=" b-red title">الرجاء التأكد من صحة المعلومات التالية:</h3>
+              <div class="form">
+                <form action="" method="post">
+
+                  <div class="my-4">
+                    <label for="name" class="form-label">فصيلة الدم :</label>
+                    <!-- <input type="text" class="form-control" id="name"> -->
+                    <select class="form-select" aria-label="Default select example">
+                      <!-- <option selected>Open this select menu</option> -->
+                      <option value="1" selected>A+</option>
+                      <option value="2">B-</option>
+                      <option value="3">AB+</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label for="phone-number" class="form-label">رقم الهاتف :</label>
+                    <input type="text" class="form-control" id="phone-number">
+                  </div>
+                  <button type="button" class="px-5 m-auto d-block btn btn-outline-primary mb-2">إرسال</button>
+                  <p class="mt-3"><span class="text-danger">ملاحضة</span> عزيزي المتبرع سيكون موعد تبرعك بالدم خلال 24 ساعة من ارسال طلبك لتجهيز المكان وذلك لتقدير وقتك وعدم بقائك تنتظر في ممرات المستشفىز</p>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="tsm" class="form-give">
+            <div class="card-body">
+              <h3 class=" b-red title">الرجاء التأكد من صحة رقم هاتفك:</h3>
+              <div class="form mt-4">
+                <form action="" method="post">
+                  <div class="mb-4">
+                    <label for="phone-number" class="form-label">رقم الهاتف :</label>
+                    <input type="text" class="form-control" id="phone-number">
+                  </div>
+                  <button type="button" class="px-5 m-auto d-block btn btn-outline-primary mb-2">إرسال</button>
+                  <p class="mt-3"><span class="text-danger">ملاحضة</span> عزيزي المتبرع ستتلقى رسالة نصية تحتوي على رقم هاتف ولي امر المريض وذالك لتسليم المال وجها لوجه لزيادة مصداقية التبرع.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer id="footer">
+    <div class="container">
+      <!-- <div class="header">
+            <h1 class="text-center">ضم اليدين امر حسن</h1>
+            <h1 class="text-center">لكن فتحهما امر افضل</h1>
+            <p class="text-details">- لويس راتسبون</p>
+          </div> -->
+      <div class="my-auto mt-2 social-Media">
+        <a href="#">
+          <img src="img/icons/facebook.svg" alt="facebook icons" />
+        </a>
+        <a href="#">
+          <img src="img/icons/instagram.png" alt="facebook icons" />
+        </a>
+        <a href="#">
+          <img src="img/icons/twitter.png" alt="facebook icons" />
+        </a>
+        <a href="#">
+          <img src="img/icons/linkedin.png" alt="facebook icons" />
+        </a>
+      </div>
+      <h5 class="mt-4 mb-0 text-center">
+        Code For Iraq &copy;2021 all rights reserved
+      </h5>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="style/js/jquery/jquery-3.4.1.js"></script> -->
+
+  <script src="style/js/popper.js"></script>
+  <script src="style/js/bootstrap-js/bootstrap.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  <script src="style/js/myjs.js"></script>
+
+
+  <script>
+    //add hover class in selected list itim
+    let list = document.querySelectorAll('.header-give .btn');
+    function activeLink() {
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) => item.addEventListener('click', activeLink))
+
+
+    //active blode form
+    function activeBlode(x) {
+      let formBlode = document.getElementById('tsb');
+      let formMenny = document.getElementById('tsm');
+
+      if (x == 'tsb') {
+        formBlode.classList.add('active2');
+        formMenny.classList.remove('active2');
+      } else {
+        formBlode.classList.remove('active2');
+        formMenny.classList.add('active2');
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
